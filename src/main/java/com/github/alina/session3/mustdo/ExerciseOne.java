@@ -2,7 +2,8 @@ package com.github.alina.session3.mustdo;
 
 import java.util.Scanner;
 
-public class Operators {
+public class ExerciseOne {
+    // 1. Write a Java program to take two numbers as input and display the result of addition, subtraction, multiplication, division, and modulus.
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please, input a number  ");
