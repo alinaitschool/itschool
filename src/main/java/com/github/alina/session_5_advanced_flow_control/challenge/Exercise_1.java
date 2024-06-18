@@ -8,6 +8,7 @@ public class Exercise_1 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce a number");
         int number = scanner.nextInt();
+        scanner.close();
         if (number % 2 == 0) {
             System.out.println("Odd");
         } else {
