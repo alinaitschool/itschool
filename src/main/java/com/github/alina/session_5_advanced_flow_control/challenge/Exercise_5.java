@@ -9,9 +9,8 @@ public class Exercise_5 {
         int n = scanner.nextInt();
         int numberOfFibonaci = findFibonaciNumber(n);
         System.out.println(numberOfFibonaci);
+        scanner.close();
     }
-
-    //1 1 2 3 5 8 13  , 4
     public static int findFibonaciNumber(int n) {
         int[] fibonacci = new int[n];
         if (n >= 0) {
@@ -26,6 +25,7 @@ public class Exercise_5 {
             for (int i = 0; i < n; i++) {
                 System.out.print(fibonacci[i] + " ");
             }
+
         }
         return fibonacci[n - 1];
     }

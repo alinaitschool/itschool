@@ -17,5 +17,6 @@ public class Exercise_6 {
             numbers.add(number);
         }
         System.out.println("Numbers is" + numbers);
+        scanner.close();
     }
 }
