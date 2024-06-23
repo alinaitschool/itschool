@@ -5,7 +5,7 @@ import java.util.List;
 
 //concatenate Multiple Strings
 //Description: Given a list of strings, use StringBuilder to concatenate them into a single string efficiently.
-public class Exercise_6 {
+public class Exercise_3 {
     public static void main(String[] args) {
         String[] a = new String[]{"Hello", " ", "world", "!", " How", " are", " you?"};
         List<String> strings = Arrays.asList(a);
