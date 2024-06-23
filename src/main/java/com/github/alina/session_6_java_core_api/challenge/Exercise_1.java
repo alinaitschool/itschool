@@ -5,5 +5,4 @@ public class Exercise_1 {
         StringBuilder string= new StringBuilder("alina");
         System.out.println(string.reverse());
     }
-
 }
