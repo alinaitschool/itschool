@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class Exercise_8 {
     public static void main(String[] args) {
         int number = 10;
-        System.out.println(Arrays.toString(findFibonaciNumber(number)));
+        System.out.println(Arrays.toString(getFibonaciArray(number)));
     }
-    public static int[] findFibonaciNumber(int number) {
+    public static int[] getFibonaciArray(int number) {
         int[] fibonaciNumbers = new int[number];
         if (number >= 0) {
             fibonaciNumbers[0] = 0;
@@ -19,3 +19,4 @@ public class Exercise_8 {
         return fibonaciNumbers;
     }
 }
+

@@ -13,7 +13,7 @@ public class Exercise_6 {
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         while (number >= 0) {
             System.out.println("Input a number");
-           number = scanner.nextInt();
+            number = scanner.nextInt();
             numbers.add(number);
         }
         System.out.println("Numbers is" + numbers);

@@ -9,11 +9,12 @@ public class Exercise_4 {
         System.out.println("Input a random string");
         String stringToBeReverted = scanner.nextLine();
         String stringResult = stringReverted(stringToBeReverted);
-       System.out.println(stringResult);
+        System.out.println(stringResult);
     }
-    public static String stringReverted(String stringToBeReverted){
+
+    public static String stringReverted(String stringToBeReverted) {
         StringBuilder stringBilder = new StringBuilder();
-        for(int i=stringToBeReverted.length()-1; i>=0; i--){
+        for (int i = stringToBeReverted.length() - 1; i >= 0; i--) {
             stringBilder.append(stringToBeReverted.charAt(i));
         }
         return stringBilder.toString();

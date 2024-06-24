@@ -11,6 +11,7 @@ public class Exercise_5 {
         System.out.println(numberOfFibonaci);
         scanner.close();
     }
+
     public static int findFibonaciNumber(int n) {
         int[] fibonacci = new int[n];
         if (n >= 0) {

@@ -9,19 +9,22 @@ Description: Create a Java program that uses the StringBuilder class to remove a
 public class Exercise_4 {
     public static void main(String[] args) {
         String string = "alinEalOnaAlinUakaIIIiimoTfYeiadgshajkle";
-        String noVovels= removeVovels(string);
+        String noVovels = removeVovels(string);
         System.out.println(noVovels);
     }
-    public static String removeVovels(String string){
+
+    public static String removeVovels(String string) {
         StringBuilder str = new StringBuilder();
-        List<String> vowels= Arrays.asList("a","A","i","I","U","u","o","O","E", "e", "Y", "y");
-       for(int i=0; i<string.length(); i++){
-           if(!vowels.contains(String.valueOf(string.charAt(i)))){
-               str.append(string.charAt(i));
-          }
-       }return str.toString();
+        List<String> vowels = Arrays.asList("a", "A", "i", "I", "U", "u", "o", "O", "E", "e", "Y", "y");
+        for (int i = 0; i < string.length(); i++) {
+            if (!vowels.contains(String.valueOf(string.charAt(i)))) {
+                str.append(string.charAt(i));
+            }
+        }
+        return str.toString();
     }
 }
+
 /*
 public class RemoveVowels {
     public static void main(String[] args) {

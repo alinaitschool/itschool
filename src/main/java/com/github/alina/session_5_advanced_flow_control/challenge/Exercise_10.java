@@ -21,7 +21,6 @@ public class Exercise_10 {
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine();
             switch (choice) {
                 case 1:
                     System.out.println("Hello World");
@@ -30,9 +29,6 @@ public class Exercise_10 {
                     System.out.print("Enter your name: ");
                     String name = scanner.nextLine();
                     System.out.println("Hello, " + name);
-                    break;
-                case 3:
-                    System.out.println("Exit");
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
