@@ -9,10 +9,10 @@ public class Exercise_3 {
     public static void main(String[] args) {
         String[] a = new String[]{"Hello", " ", "world", "!", " How", " are", " you?"};
         List<String> strings = Arrays.asList(a);
-        //  List<String> strings= Arrays.asList("Hello", " ", "world", "!", " How", " are", " you?");
+        System.out.println(getConcatenatedStrings(strings));
     }
 
-    public static String concatStrings(List<String> strings) {
+    public static String getConcatenatedStrings(List<String> strings) {
         StringBuilder sb = new StringBuilder();
         for (String str : strings) {
             sb.append(str);

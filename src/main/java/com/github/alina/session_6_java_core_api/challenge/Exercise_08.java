@@ -8,7 +8,6 @@ public class Exercise_08 {
     public static void main(String[] args) {
         System.out.println(insertGivenString("alina", "lia", 20));
     }
-
     public static String insertGivenString(String givenString, String stringToBeInserted, int index) {
         StringBuilder rezultInsertedString = new StringBuilder(givenString);
         try {

@@ -12,7 +12,6 @@ public class Exercise_06 {
         String toReplace = "dog";
         System.out.println(replace(input, beReplace, toReplace));
     }
-
     public static String replace(String input, String beReplace, String toReplace) {
         StringBuilder builder = new StringBuilder();
         if (input.contains(beReplace)) {
