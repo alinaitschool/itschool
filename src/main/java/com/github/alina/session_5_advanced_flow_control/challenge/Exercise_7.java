@@ -13,8 +13,8 @@ public class Exercise_7 {
         int number;
 
         do {
-            number=scanner.nextInt();
-            if(predefinedNumber !=number) {
+            number = scanner.nextInt();
+            if (predefinedNumber != number) {
                 System.out.println("Is not the predefinit number! Keep input number");
                 // predefinedNumber=5;
             }

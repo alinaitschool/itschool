@@ -30,7 +30,7 @@ public class Exercise_2 {
                 break;
             case 7:
                 System.out.println("July");
-             break;
+                break;
             case 8:
                 System.out.println("August");
             case 9:

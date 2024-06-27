@@ -7,11 +7,11 @@ public class Exercise_5 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input a random number");
         int n = scanner.nextInt();
-        int numberOfFibonaci = findFibonaciNumber(n);
+        int numberOfFibonaci = generateFibonacciSequence(n);
         System.out.println(numberOfFibonaci);
         scanner.close();
     }
-    public static int findFibonaciNumber(int n) {
+    public static int generateFibonacciSequence(int n) {
         int[] fibonacci = new int[n];
         if (n >= 0) {
             System.out.println("Input a positive number");
