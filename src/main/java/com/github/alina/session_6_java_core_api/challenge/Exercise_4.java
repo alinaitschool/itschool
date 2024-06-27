@@ -12,7 +12,6 @@ public class Exercise_4 {
         String noVovels = removeVovels(string);
         System.out.println(noVovels);
     }
-
     public static String removeVovels(String string) {
         StringBuilder str = new StringBuilder();
         List<String> vowels = Arrays.asList("a", "A", "i", "I", "U", "u", "o", "O", "E", "e", "Y", "y");
