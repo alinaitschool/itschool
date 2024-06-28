@@ -7,7 +7,7 @@ Description: Use the StringBuilder class to replace every occurrence of a substr
  */
 public class Exercise_06 {
     public static void main(String[] args) {
-        String input = "The cat sat on the mat.";
+        String input = "The cat sat on the mat cat.";
         String beReplace = "cat";
         String toReplace = "dog";
         System.out.println(replace(input, beReplace, toReplace));
