@@ -16,16 +16,16 @@ import java.util.Scanner;
 
 public class Challenge_04 {
     public static void main(String[] args) {
-    System.out.println(areDateEqual());
+        System.out.println(areDateEqual());
     }
 
-    public static boolean areDateEqual(){
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Introduce the first date in the format (YYYY-MM-DD): ");
-    String date1= scanner.nextLine();
-    System.out.println("Introduce the second date in the format (YYYY-MM-DD): ");
-    String date2= scanner.nextLine();
-   scanner.close();
-   return date1.equalsIgnoreCase(date2);
+    public static boolean areDateEqual() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce the first date in the format (YYYY-MM-DD): ");
+        String date1 = scanner.nextLine();
+        System.out.println("Introduce the second date in the format (YYYY-MM-DD): ");
+        String date2 = scanner.nextLine();
+        scanner.close();
+        return date1.equalsIgnoreCase(date2);
     }
 }
