@@ -16,9 +16,7 @@ public class Challenge_08 {
     }
 
     public static String findDayOfWeek(String day){
-        //comment the DateTimeFormatter fpr experimenting parse() metod
-        //DateTimeFormatter formatter =DateTimeFormatter.ofPattern("yyyy-MM-dd");//
-        LocalDate localDate = LocalDate.parse(day);
+        LocalDate localDate = LocalDate.parse(day,  DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         DayOfWeek dayOfWeek= localDate.getDayOfWeek();
         return dayOfWeek.toString();
 
