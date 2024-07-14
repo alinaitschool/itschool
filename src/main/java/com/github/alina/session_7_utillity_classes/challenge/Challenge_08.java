@@ -19,7 +19,6 @@ public class Challenge_08 {
         LocalDate localDate = LocalDate.parse(day, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
         DayOfWeek dayOfWeek = localDate.getDayOfWeek();
         return dayOfWeek.toString();
-
     }
 }
 //https://www.baeldung.com/java-creating-localdate-with-values
