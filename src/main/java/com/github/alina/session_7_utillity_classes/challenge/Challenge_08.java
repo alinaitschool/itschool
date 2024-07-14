@@ -15,11 +15,12 @@ public class Challenge_08 {
         System.out.println("The day of the week for " + date + " is: " + dayOfWeek);
     }
 
-    public static String findDayOfWeek(String day){
-        LocalDate localDate = LocalDate.parse(day,  DateTimeFormatter.ofPattern("yyyy-MM-dd"));
-        DayOfWeek dayOfWeek= localDate.getDayOfWeek();
+    public static String findDayOfWeek(String day) {
+        LocalDate localDate = LocalDate.parse(day, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        DayOfWeek dayOfWeek = localDate.getDayOfWeek();
         return dayOfWeek.toString();
 
     }
 }
 //https://www.baeldung.com/java-creating-localdate-with-values
+//https://www.youtube.com/results?search_query=localdate+java
