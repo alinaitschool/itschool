@@ -5,6 +5,5 @@ public abstract class Animal {
         System.out.print("This animal eats very much food");
     }
     public abstract void makeSound();
-    public abstract void poop();
 
 }
