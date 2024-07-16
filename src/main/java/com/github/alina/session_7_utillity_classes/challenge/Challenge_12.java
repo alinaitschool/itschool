@@ -36,3 +36,4 @@ public class Challenge_12 {
        return localDateTime.atZone(ZoneId.of(timeZone, ZoneId.SHORT_IDS)).format(dateTimeFormatter);
     }
 }
+//https://stackoverflow.com/questions/57468423/java-8-time-zone-zonerulesexception-unknown-time-zone-id-est
