@@ -1,4 +1,4 @@
-package com.github.alina.session_12_abstractions.practice;
+package com.github.alina.session_12_abstractions.practice.examples;
 
 public class Dog extends Animal implements Pet{
 
