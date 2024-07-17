@@ -18,15 +18,12 @@ public class Challenge_07 {
         fruitsList.add("Date");
         fruitsList.add("Grapes");
         fruitsList.add("Banana");
-        Collections.sort(fruitsList, new Comparator<String>() {
-            @Override
-            public int compare(String fruits1, String fruits2) {
-                int lenghtComparation = Integer.compare(fruits1.length(), fruits2.length());
-                if(lenghtComparation ==0){
-                    return fruits2.compareTo(fruits1);
-                }
-               return  lenghtComparation;
+        Collections.sort(fruitsList, (fruits1, fruits2) -> {
+            int lenghtComparation = Integer.compare(fruits1.length(), fruits2.length());
+            if(lenghtComparation ==0){
+                return fruits2.compareTo(fruits1);
             }
+           return  lenghtComparation;
         });
     for(String fruit: fruitsList){
         System.out.println(fruit);
