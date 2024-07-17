@@ -18,16 +18,36 @@ public class Challenge_07 {
         fruitsList.add("Date");
         fruitsList.add("Grapes");
         fruitsList.add("Banana");
-        Collections.sort(fruitsList, (fruits1, fruits2) -> {
-            int lenghtComparation = Integer.compare(fruits1.length(), fruits2.length());
-            if(lenghtComparation ==0){
-                return fruits2.compareTo(fruits1);
+        for (int i = 0; i < fruitsList.size() - 1; i++) {
+            for (int j = i + 1; j < fruitsList.size(); j++) {
+                if (fruitsList.get(i).length() < fruitsList.get(j).length()) {
+                    String temp = fruitsList.get(i);
+                    fruitsList.set(i, fruitsList.get(j));
+                    fruitsList.set(j, temp);
+                } else {
+                    if (fruitsList.get(i).length() == fruitsList.get(j).length()) {
+                        if (fruitsList.get(i).compareTo(fruitsList.get(j)) < 0) {
+                            String temp = fruitsList.get(i);
+                            fruitsList.set(i, fruitsList.get(j));
+                            fruitsList.set(j, temp);
+                        }
+                    }
+                }
             }
-           return  lenghtComparation;
-        });
-    for(String fruit: fruitsList){
-        System.out.println(fruit);
-    }
+        }
+        for (String fruit : fruitsList) {
+            System.out.println(fruit);
+        }
+//        Collections.sort(fruitsList, (fruits1, fruits2) -> {
+//            int lenghtComparation = Integer.compare(fruits1.length(), fruits2.length());
+//            if(lenghtComparation ==0){
+//                return fruits2.compareTo(fruits1);
+//            }
+//           return  lenghtComparation;
+//        });
+//    for(String fruit: fruitsList){
+//        System.out.println(fruit);
+//    }
     }
 
 }
