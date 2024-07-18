@@ -6,7 +6,13 @@ Convert this string into an Integer using the Integer wrapper class and the meth
 public class Challenge_09 {
     public static void main(String[] args) {
         String stringReprezentation = "1011";
-        Integer convertedString = Integer.parseInt(stringReprezentation, 2);
+        Challenge_09 convertos = new Challenge_09();
+        convertos.convertBinaryToDecimal(stringReprezentation);
+    }
+
+    public int convertBinaryToDecimal(String binaryValue) {
+        Integer convertedString = Integer.parseInt(binaryValue, 2);
         System.out.println(convertedString);
+        return convertedString;
     }
 }
