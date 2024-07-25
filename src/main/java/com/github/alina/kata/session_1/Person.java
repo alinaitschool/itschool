@@ -1,11 +1,17 @@
 package com.github.alina.kata.session_1;
 
+import java.util.Collection;
 import java.util.Objects;
 
 public class Person {
     private String name;
     private int age;
     private String address;
+    private Collection<String> emails;
+
+    public void setEmails( Collection<String> emails){
+        this.emails = emails;
+    }
 
 //    public Person(String name, int age, String address) {
 //        this.name = name;
