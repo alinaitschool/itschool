@@ -9,10 +9,12 @@ public class MapPractice {
         Map<String, Integer> students = initializeMap();
 
     }
-    public static int retriveValue(Map<String, Integer> map, String key){
+
+    public static int retriveValue(Map<String, Integer> map, String key) {
         return map.get(key);
     }
-    public static Map<String, Integer> initializeMap(){
+
+    public static Map<String, Integer> initializeMap() {
         Map<String, Integer> students = new HashMap<>();
         students.put("Alina", 21);
         students.put("Gabriela", 21);
