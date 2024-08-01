@@ -1,4 +1,4 @@
-package com.github.alina.session_17_generics.challenge;
+package com.github.alina.session_17_generics.practice;
 
 import java.util.HashSet;
 import java.util.Set;

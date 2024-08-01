@@ -1,4 +1,4 @@
-package com.github.alina.session_17_generics.challenge;
+package com.github.alina.session_17_generics.practice;
 
 import java.util.Objects;
 
@@ -32,5 +32,14 @@ public class Employee {
     @Override
     public int hashCode() {
         return Objects.hash(getId(), getFirstName(), secondName);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                '}';
     }
 }
