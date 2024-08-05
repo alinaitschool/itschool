@@ -6,6 +6,6 @@ import java.util.List;
 public class StreamSortExample {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("John", "Jack", "Alice");
-        names.stream().sorted().forEach(name->System.out.println(name));
+        names.stream().sorted().forEach(name -> System.out.println(name));
     }
 }
